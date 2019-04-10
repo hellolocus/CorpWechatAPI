@@ -10,7 +10,7 @@ class DeptManagment(BaseAPI):
         logging.info("Init department managment api")
     def create_dept(self):
         new_dept = {
-            "name": "河南研发中心11",
+            "name": "河南研发中心14",
             "parentid": 3,
             "order": 1
             }
@@ -22,7 +22,7 @@ class DeptManagment(BaseAPI):
         return self.get_response()
 
     def delete_dept(self):
-        params = {'access_token':self.get_token(),'id':7 }
+        params = {'access_token':self.get_token(),'id':8 }
         self.extend_get(self.delete_dept_url,params)
 
     def get_delete_response(self):
