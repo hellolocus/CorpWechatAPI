@@ -6,4 +6,4 @@ def  read_config(cfg_file):
     config = configparser.ConfigParser()
     config.read(cfg_file,encoding='utf-8')
     return config
-sys_cfg = read_config('../../../../cfg/config.cfg')
+sys_cfg = read_config('../cfg/config.cfg')
