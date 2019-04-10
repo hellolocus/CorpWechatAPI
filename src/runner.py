@@ -21,9 +21,10 @@ logging.getLogger().addHandler(fileHandler)
 
 if __name__ == '__main__':
     logging.info("Start to execute  automation cases")
-    pytest.main(['-sq', 'testcases\contact\department\test_create_dept.py'])
+    sys.path.append(os.path.dirname(sys.modules[__name__].__file__))
+    # pytest.main(['-sq','test_create_dept.py'])
     #pytest.main(['-sq', 'testcases'])
-
+    pytest.main(['-s','-q','--alluredir','../report'])
     #pytest.main(['-sq', '--alluredir', 'testreport.bak', 'testcases/shoppingonline/test_update_shopping_info.py::TestUpdateShoppingInfo::test_1453775'])
     #print(subprocess.getstatusoutput('/usr/local/bin/allure generate --clean ../log/testreport/ -o ../log/testreport/html'))
 
