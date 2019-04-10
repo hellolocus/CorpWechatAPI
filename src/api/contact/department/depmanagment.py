@@ -10,7 +10,7 @@ class DeptManagment(BaseAPI):
         logging.info("Init department managment api")
     def create_dept(self):
         new_dept = {
-            "name": "河南研发中心",
+            "name": "河南研发中心11",
             "parentid": 3,
             "order": 1
             }
